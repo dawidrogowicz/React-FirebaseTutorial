@@ -126,4 +126,143 @@ Also we need to add some nice styling
 This Message will be rendered for each record in the DataBase.
 
 ## Creating Form
-Our form will 
+Our form will handle the message rendering and adding a new message to database.
+### Form.js
+```javascript
+import React, { Component } from 'react';
+import './Form.css';
+import Message from '../Message/Message';
+import firebase from 'firebase';
+
+export default class Form extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      userName: 'Sebastian',
+      message: '',
+      list: [],
+    };
+
+    this.messageRef = firebase.database().ref().child('messages');
+    this.listenMessages();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.user) {
+      this.setState({'userName': nextProps.user.displayName});
+    }
+  }
+
+  handleChange(event) {
+    this.setState({message: event.target.value});
+  }
+
+  handleSend() {
+    if (this.state.message) {
+      var newItem = {
+        userName: this.state.userName,
+        message: this.state.message,
+      }
+
+      this.messageRef.push(newItem);
+      this.setState({ message: '' });
+    }
+  }
+
+  handleKeyPress(event) {
+    if (event.key !== 'Enter') return;
+    this.handleSend();
+  }
+
+  listenMessages() {
+    this.messageRef
+      .limitToLast(10)
+      .on('value', message => {
+        this.setState({
+          list: Object.values(message.val()),
+        });
+      });
+  }
+
+  render() {
+    return (
+      <div className="form">
+        <div className="form__message">
+          { this.state.list.map((item, index) =>
+            <Message key={index} message={item} />
+          )}
+        </div>
+        <div className="form__row">
+          <input
+            className="form__input"
+            type="text"
+            placeholder="Type message"
+            value={this.state.message}
+            onChange={this.handleChange.bind(this)}
+            onKeyPress={this.handleKeyPress.bind(this)}
+          />
+          <button
+            className="form__button"
+            onClick={this.handleSend.bind(this)}
+          >
+            send
+          </button>
+        </div>
+      </div>
+    );
+  }
+}
+
+```
+Then some styling
+ 
+### Form.css
+```css
+.form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.form__input:focus {
+    background-color: rgba(245, 243, 243, 0.5);
+}
+
+.form__button {
+    padding: 0 30px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.form__message {
+    width: 100%;
+    padding: 0 20px;
+}
+```
+
