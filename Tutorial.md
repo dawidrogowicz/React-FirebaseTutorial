@@ -127,7 +127,8 @@ This Message will be rendered for each record in the DataBase.
 
 ## Creating Form
 Our form will handle the message rendering and adding a new message to database.
-### Form.js
+
+##### Form.js
 ```javascript
 import React, { Component } from 'react';
 import './Form.css';
@@ -217,7 +218,7 @@ export default class Form extends Component {
 ```
 Then some styling
  
-### Form.css
+##### Form.css
 ```css
 .form {
     display: flex;
@@ -266,3 +267,139 @@ Then some styling
 }
 ```
 
+## APP - Wrapper
+
+##### App.js
+```javascript
+import React, { Component } from 'react';
+import logo from '../../images/logo.svg';
+import './App.css';
+import Form from '../Form/Form.js';
+import firebase from 'firebase';
+import firebaseConfig from '../../config';
+
+firebase.initializeApp(firebaseConfig);
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      user: null,
+    }
+  }
+
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged(user => {
+      this.setState({ user });
+    });
+  }
+
+  handleSignIn() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider);
+  }
+
+  handleLogOut() {
+    firebase.auth().signOut();
+  }
+
+  render() {
+    return (
+      <div className="app">
+        <div className="app__header">
+          <img src={logo} className="app__logo" alt="logo" />
+          <h2>
+            SIMPLE APP WITH REACT
+          </h2>
+
+          { !this.state.user ? (
+            <button
+              className="app__button"
+              onClick={this.handleSignIn.bind(this)}
+            >
+              Sign in
+            </button>
+          ) : (
+            <button
+              className="app__button"
+              onClick={this.handleLogOut.bind(this)}
+            >
+              Logout
+            </button>
+          )}
+        </div>
+        <div className="app__list">
+          <Form user={this.state.user} />
+        </div>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+##### App.css
+```css
+.app {
+  text-align: center;
+}
+
+.app__logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.app__header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.app__intro {
+  font-size: large;
+}
+
+.app__list {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.app__button {
+  border: 0;
+  border-radius: 0;
+  padding: 10px 20px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  opacity: .8;
+  outline: 0;
+}
+
+.app__button:hover {
+  opacity: 1;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+```
+
+We need to also add __FIREBASE__ config someware.
+Lets add it to the config.js
+
+##### config.js
+```javascript
+export default {
+  apiKey: "AIzaSyAaODb7bCoZPvV4gdVyG_sV_Lc1_GuVdwg",
+  authDomain: "react-intro-37cd1.firebaseapp.com",
+  databaseURL: "https://react-intro-37cd1.firebaseio.com",
+  projectId: "react-intro-37cd1",
+  storageBucket: "react-intro-37cd1.appspot.com",
+  messagingSenderId: "181293593583"
+};
+```
