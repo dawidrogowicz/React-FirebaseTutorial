@@ -34,7 +34,8 @@ For this little tutorial we will create new __FIREBASE__ project, you can do tha
  npm install --save react react-dom firebase
  npm install --save-dev react-scripts
 ```
-  
+We install react-scripts for tests purposes.
+You can read more about it [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).  
 Lets also add some scripts to our package.json file.
 ```json
 "scripts": {
@@ -44,3 +45,4 @@ Lets also add some scripts to our package.json file.
     "eject": "react-scripts eject"
   }
 ```
+
