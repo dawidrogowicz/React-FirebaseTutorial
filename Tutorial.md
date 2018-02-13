@@ -1,11 +1,11 @@
 # React Firebase chat app
 
 If you are into front-end development I bet you heard about REACT JS.  
-This unique framework is becoming an industry standard. If you want to know more on how to use it stick to this tutorial and we will unveil the basics, create a production ready application and integrate it with *real-time database* provided by __FIREBASE__.
-We will together build a messaging app with users authentication by __GOOGLE AUTH__
+This unique framework is becoming an industry standard. If you want to know more on how to use it stick to this tutorial and we will unveil the basics, create a production ready application and integrate it with *real-time database* provided by __FIREBASE__.  
+We will together build a messaging app with users authentication by __GOOGLE AUTH__.
 ![What We Will Build](WhatWeWillBuild.png)
 
-### For starters, let's explain what actually is __REACT__ and __FIREBASE__, how it works and how can we utilize it.
+For starters, let's explain what actually is __REACT__ and __FIREBASE__, how it works and how can we utilize it.
 ![React Logo](ReactLogo.png)  
 
 __REACT__ is a JavaScript Library for building interfaces created by __FACEBOOK__ developers. In short it creates a virtual DOM that is updated whenever some state of your application changes.

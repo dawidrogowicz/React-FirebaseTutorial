@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ba61aa-21c9-477c-871f-a35369e8dc2d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/FolderStructureRefractor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WhatWeWillBuild.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/react-intro/src/components/Form/Form.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/react-intro/src/components/Form/Form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/react-intro/src/components/Message/Message.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/react-intro/src/components/Message/Message.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/react-intro/src/config.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Tutorial.md" afterPath="$PROJECT_DIR$/Tutorial.md" />
-      <change beforePath="$PROJECT_DIR$/app/react-intro/package-lock.json" afterPath="$PROJECT_DIR$/app/react-intro/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/app/react-intro/package.json" afterPath="$PROJECT_DIR$/app/react-intro/package.json" />
-      <change beforePath="$PROJECT_DIR$/app/react-intro/src/App.css" afterPath="$PROJECT_DIR$/app/react-intro/src/components/App/App.css" />
-      <change beforePath="$PROJECT_DIR$/app/react-intro/src/App.js" afterPath="$PROJECT_DIR$/app/react-intro/src/components/App/App.js" />
-      <change beforePath="$PROJECT_DIR$/app/react-intro/src/App.test.js" afterPath="$PROJECT_DIR$/app/react-intro/src/components/App/App.test.js" />
-      <change beforePath="$PROJECT_DIR$/app/react-intro/src/index.js" afterPath="$PROJECT_DIR$/app/react-intro/src/index.js" />
-      <change beforePath="$PROJECT_DIR$/app/react-intro/src/logo.svg" afterPath="$PROJECT_DIR$/app/react-intro/src/images/logo.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,11 +20,11 @@
         <entry file="file://$PROJECT_DIR$/Tutorial.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="114">
-                <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <first_editor relative-caret-position="133">
+                <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                 <folding>
-                  <marker date="1518530476453" expanded="true" signature="1607:1690" ph="{...}" />
-                  <marker date="1518530476453" expanded="true" signature="1621:1687" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
+                  <marker date="1518530608656" expanded="true" signature="1606:1689" ph="{...}" />
+                  <marker date="1518530608656" expanded="true" signature="1620:1686" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -172,10 +156,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/app/react-intro/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="237" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="744" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -225,33 +208,6 @@
               <item name="react-intro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReactFirebaseTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactFirebaseTutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="react-intro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReactFirebaseTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactFirebaseTutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="react-intro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReactFirebaseTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReactFirebaseTutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="react-intro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Message" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReactFirebaseTutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -313,15 +269,15 @@
       <workItem from="1518460647261" duration="15000" />
       <workItem from="1518460685185" duration="2137000" />
       <workItem from="1518505944505" duration="2374000" />
-      <workItem from="1518528386528" duration="2053000" />
+      <workItem from="1518528386528" duration="2188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7742000" />
+    <option name="totallyTimeSpent" value="7877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="958" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -331,7 +287,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28966224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -365,8 +321,8 @@
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1518530476453" expanded="true" signature="1607:1690" ph="{...}" />
-              <marker date="1518530476453" expanded="true" signature="1621:1687" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
+              <marker date="1518530608656" expanded="true" signature="1606:1689" ph="{...}" />
+              <marker date="1518530608656" expanded="true" signature="1620:1686" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -379,8 +335,8 @@
           <first_editor relative-caret-position="190">
             <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
             <folding>
-              <marker date="1518530476453" expanded="true" signature="1607:1690" ph="{...}" />
-              <marker date="1518530476453" expanded="true" signature="1621:1687" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
+              <marker date="1518530608656" expanded="true" signature="1606:1689" ph="{...}" />
+              <marker date="1518530608656" expanded="true" signature="1620:1686" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -398,8 +354,8 @@
           <first_editor relative-caret-position="190">
             <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
             <folding>
-              <marker date="1518530476453" expanded="true" signature="1607:1690" ph="{...}" />
-              <marker date="1518530476453" expanded="true" signature="1621:1687" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
+              <marker date="1518530608656" expanded="true" signature="1606:1689" ph="{...}" />
+              <marker date="1518530608656" expanded="true" signature="1620:1686" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -515,11 +471,11 @@
     <entry file="file://$PROJECT_DIR$/Tutorial.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
             <folding>
-              <marker date="1518530476453" expanded="true" signature="1607:1690" ph="{...}" />
-              <marker date="1518530476453" expanded="true" signature="1621:1687" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
+              <marker date="1518530608656" expanded="true" signature="1606:1689" ph="{...}" />
+              <marker date="1518530608656" expanded="true" signature="1620:1686" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
