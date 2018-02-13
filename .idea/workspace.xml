@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ba61aa-21c9-477c-871f-a35369e8dc2d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Tutorial.md" afterPath="$PROJECT_DIR$/Tutorial.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,11 +20,11 @@
         <entry file="file://$PROJECT_DIR$/Tutorial.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="842">
-                <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <first_editor relative-caret-position="95">
+                <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
                 <folding>
-                  <marker date="1518507945000" expanded="true" signature="1480:1563" ph="{...}" />
-                  <marker date="1518507945000" expanded="true" signature="1494:1560" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
+                  <marker date="1518508570000" expanded="true" signature="1478:1561" ph="{...}" />
+                  <marker date="1518508570000" expanded="true" signature="1492:1558" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -131,12 +130,12 @@
       <updated>1518460645994</updated>
       <workItem from="1518460647261" duration="15000" />
       <workItem from="1518460685185" duration="2137000" />
-      <workItem from="1518505944505" duration="2150000" />
+      <workItem from="1518505944505" duration="2374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4302000" />
+    <option name="totallyTimeSpent" value="4526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -149,7 +148,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -179,8 +178,8 @@
           <first_editor relative-caret-position="190">
             <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
             <folding>
-              <marker date="1518507945000" expanded="true" signature="1480:1563" ph="{...}" />
-              <marker date="1518507945000" expanded="true" signature="1494:1560" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
+              <marker date="1518508570000" expanded="true" signature="1478:1561" ph="{...}" />
+              <marker date="1518508570000" expanded="true" signature="1492:1558" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -200,11 +199,11 @@
     <entry file="file://$PROJECT_DIR$/Tutorial.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="842">
-            <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
             <folding>
-              <marker date="1518507945000" expanded="true" signature="1480:1563" ph="{...}" />
-              <marker date="1518507945000" expanded="true" signature="1494:1560" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
+              <marker date="1518508570000" expanded="true" signature="1478:1561" ph="{...}" />
+              <marker date="1518508570000" expanded="true" signature="1492:1558" ph="{&quot;.read&quot;: &quot;auth == null&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
