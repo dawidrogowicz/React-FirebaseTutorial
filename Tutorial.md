@@ -1,6 +1,6 @@
 # React Firebase chat app
 
-##Introduction
+## Introduction
 
 If you are into front-end development I bet you heard about REACT JS.  
 This unique framework is becoming an industry standard. If you want to know more on how to use it stick to this tutorial and we will unveil the basics, create a production ready application and integrate it with *real-time database* provided by __FIREBASE__.  
@@ -15,7 +15,7 @@ It is optimized for performence as it re-renders only elements of the DOM affect
   
 ![Firebase Logo](FirebaseLogo.png)  
 
-__FIREBASE__ is a *BAAS* (backend as a service) that provides a lot of useful tools for mobile and web development. In it's offer we can find Hosting (even for node apps), real-time database (what we are interested in), authentication using E-mail, __Facebook__ or __Google__.
+__FIREBASE__ is a *BAAS* (backend as a service) that provides a lot of useful tools for mobile and web development. In it's offer we can find Hosting (even for node apps), real-time database (what we are interested in), authentication using E-mail, __Facebook__ or __Google__. You can find all information about __FIREBASE__ [here](https://firebase.google.com/docs/).
 
 
 ## Creating FIREBASE project.
@@ -30,7 +30,7 @@ Your rules should look something like this:
    }
  }
  ```
-We also need to set up an Authentication with __GOOGLE__.
+We also need to set up an Authentication with __GOOGLE__.  
 In Your __FIREBASE__ Console got to Authentication and enable Google auth provider.
 
 ## Creating React App
@@ -62,7 +62,7 @@ You should see standard *create-react-app* template.
 ![create-react-app template](createReactapp.png)
 
 
-### Structuring the application 
+## Creating the application structure 
 By now your folder structure should look like one below:
 ![FolderStructure](FolderStructure.png)  
 
@@ -78,7 +78,7 @@ To understand what react component is please refer to reactJS [documentation](ht
 Our Project should look like this to be more compact.
 ![FolderStructure Refractor](FolderStructureRefractor.png)
 
-### Creating a Message
+## Creating a Message
 Our Message Will contain two properties: UserName and a Message itself.
 ##### Message.js
 ```javascript
@@ -122,3 +122,8 @@ Also we need to add some nice styling
     color: rgba(0, 0, 0, 1);
 }
 ```
+
+This Message will be rendered for each record in the DataBase.
+
+## Creating Form
+Our form will 
