@@ -1,7 +1,9 @@
 # React Firebase chat app
 
 If you are into front-end development I bet you heard about REACT JS.  
-This unique framework is becoming an industry standard. If you want to know more on how to use it stick to this tutorial and we will unveal the basics, createa production ready application and intgrate it with *real-time database* provided by __FIREBASE__.
+This unique framework is becoming an industry standard. If you want to know more on how to use it stick to this tutorial and we will unveil the basics, create a production ready application and integrate it with *real-time database* provided by __FIREBASE__.
+We will together build a messaging app with users authentication by __GOOGLE AUTH__
+![What We Will Build](WhatWeWillBuild.png)
 
 ### For starters, let's explain what actually is __REACT__ and __FIREBASE__, how it works and how can we utilize it.
 ![React Logo](ReactLogo.png)  
@@ -38,9 +40,39 @@ For this little tutorial we will create new __FIREBASE__ project, you can do tha
 Then in directory where you want your project to live run:
 ```node
 npx create-react-app react-intro
+cd react-intro
 ```
 
-You will end up with folder structure like one below:
-![FolderStructure](FolderStructure.png)
+Ok we need one more thing which is __FIREBASE__ npm module
+```node
+npm install --save firebase
+```
+
+Let's give it a try. Run the app:
+```node
+npm start
+```
+
+You should see standard *create-react-app* template.
+![create-react-app template](createReactapp.png)
+
+
+### Structuring the application 
+By now your folder structure should look like one below:
+![FolderStructure](FolderStructure.png)  
+
+That is a little mess, let's clean it up.
+Our chat app will be created with use of 3 react components:  
+Wrapper - App.js  
+Form - Form.js  
+Message - Message.js
+
+We also need .css files for a little style and a separate file for __FIREBASE__ configuration. 
+
+To understand what react component is please refer to reactJS [documentation](https://reactjs.org/)
+Our Project should look like this to be more compact.
+![FolderStructure Refractor](FolderStructureRefractor.png)
+
+### Creating a Message
 
 
