@@ -98,38 +98,17 @@ export default class Message extends Component {
   }
 }
 ```
-Also we need to add some nice styling
 
-##### Message.css
-```css
-.message {
-    position: relative;
-    padding: 10px 60px 10px 20px;
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.6);
-    background-color: rgba(0, 0, 0, .05);
-    text-align: left;
-    line-height: 1.7;
-}
-
-.message:nth-child(even) {
-    background-color: rgba(0, 0, 0, .025);
-}
-
-.message__author {
-    font-weight: 600;
-    margin-right: 10px;
-    color: rgba(0, 0, 0, 1);
-}
-```
 
 This Message will be rendered for each record in the DataBase.
 
 ## Creating Form
 Our form will handle the message rendering and adding a new message to database.
+Lets see how it looks.
 
+  
 ##### Form.js
-```javascript
+```javascript 
 import React, { Component } from 'react';
 import './Form.css';
 import Message from '../Message/Message';
@@ -214,61 +193,73 @@ export default class Form extends Component {
     );
   }
 }
-
 ```
-Then some styling
+
+Ok that's quite some code.
+Lets see whats going on here. 
+This component is a perfect example of Class Component.
+It has a state that we set up with initial values.
+```javascript
+constructor(props) {
+    super(props);
+    
+    this.state = {
+      userName: 'Sebastian',
+      message: '',
+      list: [],
+    };
+    
+    this.messageRef = firebase.database().ref().child('messages');
+    this.listenMessages();
+}
+```
+There are also methods to work with events.
+```javascript
+  handleChange(event) {
+    this.setState({message: event.target.value});
+  }
+
+  handleSend() {
+    if (this.state.message) {
+      var newItem = {
+        userName: this.state.userName,
+        message: this.state.message,
+      }
+
+      this.messageRef.push(newItem);
+      this.setState({ message: '' });
+    }
+  }
+
+  handleKeyPress(event) {
+    if (event.key !== 'Enter') return;
+    this.handleSend();
+  }
+
+  listenMessages() {
+    this.messageRef
+      .limitToLast(10)
+      .on('value', message => {
+        this.setState({
+          list: Object.values(message.val()),
+        });
+      });
+  }
+```
+And Component Life Cycle Methods
+```javascript
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.user) {
+      this.setState({'userName': nextProps.user.displayName});
+    }
+  }
+```
+This last one handles events specific for React Components. 
+Lets Head to the last but not least component.
+## App Component 
  
-##### Form.css
-```css
-.form {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    width: 100%;
-}
-
-.form__row {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    padding: 20px;
-}
-
-.form__input {
-    width: 100%;
-    padding: 15px 20px;
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    outline: 0;
-}
-
-.form__input:focus {
-    background-color: rgba(245, 243, 243, 0.5);
-}
-
-.form__button {
-    padding: 0 30px;
-    background-color: #000;
-    color: #fff;
-    border: 0;
-    border-radius: 0 5px 5px 0;
-    outline: 0;
-    cursor: pointer;
-}
-
-.form__button:hover {
-    background-color: rgba(0, 0, 0, .8);
-}
-
-.form__message {
-    width: 100%;
-    padding: 0 20px;
-}
-```
-
-## APP - Wrapper
-
+This component will be a wrapper on our form and message.
+It will also handle __FIREBASE__ authentication.
 ##### App.js
 ```javascript
 import React, { Component } from 'react';
@@ -340,6 +331,80 @@ class App extends Component {
 export default App;
 ```
 
+## Final Touch
+We need to add some styling 
+
+##### Message.css
+```css
+.message {
+    position: relative;
+    padding: 10px 60px 10px 20px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .05);
+    text-align: left;
+    line-height: 1.7;
+}
+
+.message:nth-child(even) {
+    background-color: rgba(0, 0, 0, .025);
+}
+
+.message__author {
+    font-weight: 600;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 1);
+}
+```
+
+##### Form.css
+```css
+.form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.form__input:focus {
+    background-color: rgba(245, 243, 243, 0.5);
+}
+
+.form__button {
+    padding: 0 30px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.form__message {
+    width: 100%;
+    padding: 0 20px;
+}
+```
 ##### App.css
 ```css
 .app {
@@ -389,7 +454,7 @@ export default App;
 }
 ```
 
-We need to also add __FIREBASE__ config someware.
+We need also add __FIREBASE__ config someware.
 Lets add it to the config.js
 
 ##### config.js
@@ -402,4 +467,10 @@ export default {
   storageBucket: "react-intro-37cd1.appspot.com",
   messagingSenderId: "181293593583"
 };
+```
+
+## Running our App
+Hopefully that will work, let's test that.
+```bash
+npm start
 ```
