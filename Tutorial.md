@@ -213,6 +213,14 @@ constructor(props) {
     this.listenMessages();
 }
 ```
+And Component Life Cycle Methods which handles events specific for React Components.
+```javascript
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.user) {
+      this.setState({'userName': nextProps.user.displayName});
+    }
+  }
+```
 There are also methods to work with events.
 ```javascript
   handleChange(event) {
@@ -246,15 +254,8 @@ There are also methods to work with events.
       });
   }
 ```
-And Component Life Cycle Methods
-```javascript
-  componentWillReceiveProps(nextProps) {
-    if(nextProps.user) {
-      this.setState({'userName': nextProps.user.displayName});
-    }
-  }
-```
-This last one handles events specific for React Components. 
+
+
 Lets Head to the last but not least component.
 ## App Component 
  
@@ -474,3 +475,6 @@ Hopefully that will work, let's test that.
 ```bash
 npm start
 ```
+
+If you managed to stick with us to the end you should now have a brief overview of __REACT JS__ and __FIREBASE__.  
+Thank you and we hope you will get back for more exiting tutorials. 
